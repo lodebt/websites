@@ -1,3 +1,5 @@
+
+
 function setup() {
   scale(1)
   createCanvas(windowWidth, windowHeight);
@@ -12,8 +14,9 @@ function draw() {
   GetCamera2();
   
   if (mouseIsPressed){
-    fill(135,82,48)
-    rect(150, 70, 448, 336) 
+    fill(135, 82, 48)
+    noStroke()
+    rect(150, 10, 10000, 10000) 
   }
 }
 
@@ -31,10 +34,10 @@ function SetCamera2(){
 }
 
 function GetCamera1(){
-  image(capture, 150, 70, 448, 336);
+  image(capture, 150, 10, 448, 336);
 }
 
 function GetCamera2(){
-  image(capture, 995, 70, 448, 336);
+  image(capture, 150, 350, 448, 336);
  // Default image(capture, 500, 50, 320, 240);
 }
